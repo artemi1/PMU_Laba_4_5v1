@@ -28,7 +28,7 @@ public abstract class VerletIntegrationSystem
     {
         updateForces();
         updateVerlet();
-        iterateCollisions();
+        //iterateCollisions();
         satisfyConstraints();
     }
 
@@ -119,6 +119,7 @@ public abstract class VerletIntegrationSystem
         }
     }
 
+/*
 
     public boolean detectCollision(int bIndex1, int bIndex2)
     {
@@ -242,6 +243,8 @@ public abstract class VerletIntegrationSystem
             }
         }
     }
+
+ */
 
     public void updateGravity(float p_x, float p_y) { vGravity.set(p_x, p_y); }
 
